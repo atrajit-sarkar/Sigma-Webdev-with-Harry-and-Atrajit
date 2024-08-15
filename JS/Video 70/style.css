@@ -1,0 +1,24 @@
+body {
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    height: 49vw;
+    width: 93vw;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}

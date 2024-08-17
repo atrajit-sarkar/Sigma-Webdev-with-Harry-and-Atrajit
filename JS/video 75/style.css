@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button {
+    cursor: pointer;
+    height: 35px;
+    width: 131px;
+    color: red;
+    background-color: greenyellow;
+    margin-top: 220px;
+    /* padding: 10px; */
+    border-radius: 14px;
+}

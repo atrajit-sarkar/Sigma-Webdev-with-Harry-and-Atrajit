@@ -9,9 +9,15 @@ function getRandomColor() {
 }
 
 setTimeout(() => {
+    console.log("Soutam is Gamer")
+
+}, 0);
+
+setTimeout(() => {
     console.log("Hrisav is Gamer")
 
 }, 0);
+
 
 document.getElementById("button").addEventListener("click", (e) => {
     document.body.style.backgroundColor = getRandomColor()
@@ -32,5 +38,6 @@ function loadscript(src, callback) {
     document.body.append(sc)
 }
 
-loadscript("myscript.js",callback)
+loadscript("script2.js",callback)
 console.log("Fuck Am I late?")
+

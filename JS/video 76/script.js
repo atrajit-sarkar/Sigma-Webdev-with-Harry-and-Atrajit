@@ -23,23 +23,25 @@ async function getdata() {
 }
 
 async function main() {
-    document.body.style.backgroundColor = "yellow"
-    let data = await getdata()
-    console.log(data);
-    document.body.style.backgroundColor = "green"
+    // document.body.style.backgroundColor = "yellow"
+    // let data = await getdata()
+    // console.log(data);
+    // document.body.style.backgroundColor = "green"
+    // console.log("Bye Bye");
+
+    let data=getdata()
+    data.then((message) => {
+        console.log(message);
+        document.body.style.backgroundColor = "green"
+
+    }
+    ).catch((error) => {
+        console.log(error)
+        document.body.style.backgroundColor = "red"
+    }
+    )
     console.log("Bye Bye");
-
-
-    // data.then((message) => {
-    //     console.log(message);
-    //     document.body.style.backgroundColor = "green"
-
-    // }
-    // ).catch((error) => {
-    //     console.log(error)
-    //     document.body.style.backgroundColor = "red"
-    // }
-    // )
+    
 
 
 

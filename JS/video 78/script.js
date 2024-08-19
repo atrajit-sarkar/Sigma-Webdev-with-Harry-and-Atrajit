@@ -33,17 +33,25 @@ async function main() {
     <div class="task-load">hjsachjksbhvhjdbvhjdbvhjdvjbdvdvdvdvd</div>
     </div>`
   setTimeout(() => {
-    document.head.innerHTML=`<meta charset="UTF-8">
+    document.head.innerHTML = `<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackers Terminal</title>
-    <link rel="stylesheet" href="end.css">`
-    document.body.innerHTML = ""
+    <link rel="stylesheet" href="end.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">`
+    // document.body.innerHTML = ""
     // document.body.style.backgroundColor="#ff000061"
-    document.body.innerHTML=`<div class="End">
+    document.body.innerHTML = `<div class="End">
     <audio id="myAudio" src="spooky.mp3"></audio>
     <div class="endtext">You are Hacked Buddy!</div>
     </div>`
-    document.getElementById("myAudio").play()
+    document.body.addEventListener("mouseover",() => {
+      
+      document.getElementById("myAudio").play()
+    }
+    )
   }, 2000);
 }
 main()
